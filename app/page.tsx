@@ -4,7 +4,6 @@ import { ConnectButton } from '@rainbow-me/rainbowkit'
 import { useAccount } from 'wagmi'
 import { ProposeTransaction } from '../components/ProposeTransaction'
 import { PendingTransactions } from '../components/PendingTransactions'
-import { TransactionHistory } from '../components/TransactionHistory'
 
 export default function Home() {
   const { isConnected } = useAccount()
@@ -48,9 +47,6 @@ export default function Home() {
 
         {/* Pending Transactions */}
         <PendingTransactions />
-
-        {/* Transaction History */}
-        <TransactionHistory />
       </div>
 
       {/* Footer */}
